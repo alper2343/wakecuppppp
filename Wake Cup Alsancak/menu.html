@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menü | Wake Cup Alsancak</title>
+    <meta name="description" content="Wake Cup Alsancak menü - Specialty kahveler, brunch, taze pastane ürünleri ve soğuk içecekler.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">Wake</span> Cup
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Ana Sayfa</a>
+                <a href="index.html#about" class="nav-link">Hakkımızda</a>
+                <a href="menu.html" class="nav-link active">Menü</a>
+                <a href="index.html#features" class="nav-link">Neden Biz?</a>
+                <a href="index.html#gallery" class="nav-link">Galeri</a>
+                <a href="index.html#contact" class="nav-link">İletişim</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="menu-hero-overlay"></div>
+        <div class="menu-hero-content">
+            <span class="dancing">wake cup alsancak</span>
+            <h1>Menümüz</h1>
+            <p>Özenle hazırlanan içecekler ve ev yapımı lezzetler</p>
+        </div>
+    </section>
+
+    <!-- Menu Filter -->
+    <div class="menu-filter-bar">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="coffee">Kahveler</button>
+                <button class="filter-btn" data-filter="cold">Soğuk İçecekler</button>
+                <button class="filter-btn" data-filter="brunch">Brunch</button>
+                <button class="filter-btn" data-filter="pastry">Pastane</button>
+                <button class="filter-btn" data-filter="other">Diğer İçecekler</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coffee Section -->
+    <section class="menu-page-section" id="coffee" data-category="coffee">
+        <div class="container">
+            <div class="menu-section-header">
+                <div class="menu-section-icon">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=120&h=120&fit=crop" alt="Coffee" loading="lazy">
+                </div>
+                <div>
+                    <span class="section-tag dancing">specialty</span>
+                    <h2>Kahveler</h2>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Espresso Bazlı</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Espresso</h4>
+                            <p>Tek origin çekirdeklerden, yoğun ve aromalı</p>
+                        </div>
+                        <div class="menu-item-price">₺75</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Double Espresso</h4>
+                            <p>Çift shot espresso, ekstra yoğun</p>
+                        </div>
+                        <div class="menu-item-price">₺85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Americano</h4>
+                            <p>Espresso ve sıcak su ile hazırlanan klasik</p>
+                        </div>
+                        <div class="menu-item-price">₺85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Latte</h4>
+                            <p>Espresso ve kadifemsi buharlanmış süt</p>
+                        </div>
+                        <div class="menu-item-price">₺100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cappuccino</h4>
+                            <p>Espresso, buharlanmış süt ve yoğun köpük</p>
+                        </div>
+                        <div class="menu-item-price">₺100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Flat White</h4>
+                            <p>Çift shot espresso ve ince süt köpüğü</p>
+                        </div>
+                        <div class="menu-item-price">₺105</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cortado</h4>
+                            <p>Espresso ve eşit oranda sıcak süt</p>
+                        </div>
+                        <div class="menu-item-price">₺90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mocha</h4>
+                            <p>Espresso, çikolata sosu ve buharlanmış süt</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Caramel Latte</h4>
+                            <p>Latte üzerine ev yapımı karamel sos</p>
+                        </div>
+                        <div class="menu-item-price">₺115</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Demleme / Filtre</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>V60</h4>
+                            <p>Pour-over yöntemiyle, temiz ve aromatik</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chemex</h4>
+                            <p>Berrak ve yumuşak içimli filtre kahve</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Aeropress</h4>
+                            <p>Yoğun gövdeli, temiz bitişli demleme</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>French Press</h4>
+                            <p>Geleneksel yöntemle zengin gövdeli kahve</p>
+                        </div>
+                        <div class="menu-item-price">₺95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Türk Kahvesi</h4>
+                            <p>Geleneksel Türk kahvesi, orta/sade/şekerli</p>
+                        </div>
+                        <div class="menu-item-price">₺70</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cold Drinks Section -->
+    <section class="menu-page-section section-alt" id="cold" data-category="cold">
+        <div class="container">
+            <div class="menu-section-header">
+                <div class="menu-section-icon">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=120&h=120&fit=crop" alt="Cold Drinks" loading="lazy">
+                </div>
+                <div>
+                    <span class="section-tag dancing">serinletici</span>
+                    <h2>Soğuk İçecekler</h2>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Soğuk Kahveler</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ice Latte</h4>
+                            <p>Soğuk süt ve buz üzerine espresso</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ice Americano</h4>
+                            <p>Buz ve soğuk su üzerine espresso</p>
+                        </div>
+                        <div class="menu-item-price">₺95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cold Brew</h4>
+                            <p>18 saat soğuk demlenmiş, yumuşak içimli</p>
+                        </div>
+                        <div class="menu-item-price">₺115</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ice Mocha</h4>
+                            <p>Soğuk süt, espresso ve çikolata sosu</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Affogato</h4>
+                            <p>Vanilyalı dondurma üzerine sıcak espresso</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Smoothie & Frappe</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mango Smoothie</h4>
+                            <p>Taze mango, muz ve yoğurt</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Berry Smoothie</h4>
+                            <p>Karışık orman meyveleri ve yoğurt</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Frappe</h4>
+                            <p>Buzlu karıştırılmış kahve, süt ve şeker</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Limonata</h4>
+                            <p>Taze sıkılmış limon, nane ve buz</p>
+                        </div>
+                        <div class="menu-item-price">₺80</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brunch Section -->
+    <section class="menu-page-section" id="brunch" data-category="brunch">
+        <div class="container">
+            <div class="menu-section-header">
+                <div class="menu-section-icon">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=120&h=120&fit=crop" alt="Brunch" loading="lazy">
+                </div>
+                <div>
+                    <span class="section-tag dancing">ev yapımı</span>
+                    <h2>Brunch</h2>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Kahvaltı Tabakları</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Wake Cup Kahvaltı Tabağı</h4>
+                            <p>Peynir çeşitleri, zeytin, domates, salatalık, bal, kaymak, tereyağı, yumurta ve taze ekmek</p>
+                        </div>
+                        <div class="menu-item-price">₺250</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Avocado Toast</h4>
+                            <p>Ekşi maya ekmek üzerinde avokado, poşe yumurta ve chili pul biber</p>
+                        </div>
+                        <div class="menu-item-price">₺180</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Eggs Benedict</h4>
+                            <p>İngiliz muffin, jambon, poşe yumurta ve hollandaise sos</p>
+                        </div>
+                        <div class="menu-item-price">₺175</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Menemen</h4>
+                            <p>Geleneksel Türk menemen, taze domates ve biberle</p>
+                        </div>
+                        <div class="menu-item-price">₺130</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Sandviç & Tost</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Club Sandviç</h4>
+                            <p>Tavuk, bacon, marul, domates ve mayo</p>
+                        </div>
+                        <div class="menu-item-price">₺170</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tuna Melt</h4>
+                            <p>Ton balığı, cheddar peynir ve ekşi maya ekmek</p>
+                        </div>
+                        <div class="menu-item-price">₺160</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Kaşarlı Tost</h4>
+                            <p>Klasik kaşar peynirli tost, tereyağında</p>
+                        </div>
+                        <div class="menu-item-price">₺100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Karışık Tost</h4>
+                            <p>Kaşar, sucuk, domates ve biber</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pastry Section -->
+    <section class="menu-page-section section-alt" id="pastry" data-category="pastry">
+        <div class="container">
+            <div class="menu-section-header">
+                <div class="menu-section-icon">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=120&h=120&fit=crop" alt="Pastane" loading="lazy">
+                </div>
+                <div>
+                    <span class="section-tag dancing">taze</span>
+                    <h2>Pastane</h2>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Kek & Tatlı</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cheesecake</h4>
+                            <p>San Sebastian veya klasik New York usulü</p>
+                        </div>
+                        <div class="menu-item-price">₺140</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Brownie</h4>
+                            <p>Yoğun çikolatalı, cevizli ev yapımı brownie</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Havuç Kek</h4>
+                            <p>Tarçınlı havuç kek, cream cheese frosting</p>
+                        </div>
+                        <div class="menu-item-price">₺120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Limonlu Kek</h4>
+                            <p>Hafif ve ferahlatıcı limonlu kek dilimi</p>
+                        </div>
+                        <div class="menu-item-price">₺100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tiramisu</h4>
+                            <p>Klasik İtalyan tiramisu, mascarpone ile</p>
+                        </div>
+                        <div class="menu-item-price">₺130</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Cookie & Atıştırmalık</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chocolate Chip Cookie</h4>
+                            <p>Yumuşak dokulu, bol parça çikolatalı</p>
+                        </div>
+                        <div class="menu-item-price">₺70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Croissant</h4>
+                            <p>Tereyağlı, kat kat açılmış taze kruvasan</p>
+                        </div>
+                        <div class="menu-item-price">₺80</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Çikolatalı Croissant</h4>
+                            <p>Pain au chocolat, bitter çikolata dolgulu</p>
+                        </div>
+                        <div class="menu-item-price">₺90</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Muffin</h4>
+                            <p>Yaban mersinli veya çikolatalı, günlük taze</p>
+                        </div>
+                        <div class="menu-item-price">₺75</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Drinks Section -->
+    <section class="menu-page-section" id="other" data-category="other">
+        <div class="container">
+            <div class="menu-section-header">
+                <div class="menu-section-icon">
+                    <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=120&h=120&fit=crop" alt="Diğer İçecekler" loading="lazy">
+                </div>
+                <div>
+                    <span class="section-tag dancing">sıcak & soğuk</span>
+                    <h2>Diğer İçecekler</h2>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Çay & Bitki Çayları</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Türk Çayı</h4>
+                            <p>Demlik çay, geleneksel ince belli bardakta</p>
+                        </div>
+                        <div class="menu-item-price">₺40</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Earl Grey</h4>
+                            <p>Bergamot aromalı siyah çay</p>
+                        </div>
+                        <div class="menu-item-price">₺65</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Green Tea</h4>
+                            <p>Japon sencha yeşil çay</p>
+                        </div>
+                        <div class="menu-item-price">₺65</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Papatya Çayı</h4>
+                            <p>Rahatlatıcı papatya bitki çayı</p>
+                        </div>
+                        <div class="menu-item-price">₺60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chai Latte</h4>
+                            <p>Baharatlı çay, buharlanmış süt ile</p>
+                        </div>
+                        <div class="menu-item-price">₺95</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-subsection">
+                <h3 class="subsection-title">Sıcak İçecekler</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Sıcak Çikolata</h4>
+                            <p>Gerçek çikolatadan hazırlanan, yoğun ve kremamsı</p>
+                        </div>
+                        <div class="menu-item-price">₺100</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Matcha Latte</h4>
+                            <p>Japon matcha tozu ve buharlanmış süt</p>
+                        </div>
+                        <div class="menu-item-price">₺110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Sahlep</h4>
+                            <p>Geleneksel sahlep, tarçın ile servis</p>
+                        </div>
+                        <div class="menu-item-price">₺90</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-accent">Wake</span> Cup
+                    </a>
+                    <p>İzmir Alsancak'ın kalbinde, specialty kahve deneyimi ve ev yapımı lezzetler sunan butik kafe.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Menü</h4>
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="index.html#about">Hakkımızda</a>
+                    <a href="menu.html">Menü</a>
+                    <a href="index.html#gallery">Galeri</a>
+                    <a href="index.html#contact">İletişim</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Çalışma Saatleri</h4>
+                    <p>Her Gün<br>08:30 - 22:30</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Bülten</h4>
+                    <p>Yeni lezzetler ve kampanyalardan haberdar olun.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" placeholder="E-posta adresiniz" required>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wake Cup Alsancak. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
